@@ -1,0 +1,27 @@
+{
+  "name": "trinet-api-proxy",
+  "version": "1.0.0",
+  "description": "A test api for rest ws",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/folivieri/api-proxy.git"
+  },
+  "author": "folivieri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/folivieri/api-proxy/issues"
+  },
+  "homepage": "https://github.com/folivieri/api-proxy#readme",
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3"
+  }
+}

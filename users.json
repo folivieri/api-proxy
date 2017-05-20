@@ -1,0 +1,42 @@
+{
+   "clientCode":"string",
+   "paycheckIssueDate":"2017-02-15",
+   "paygroupId":"string",
+   "status":"string",
+   "personIdType":"E#A",
+   "payrolleditable":"boolean",
+   "externalId":"string",
+   "externalDescription":"string",
+   "payrollDetails":[
+      {
+         "personId":"00001615003",
+         "earningCode":"REG",
+         "departmentId":"9CT5INTAUD",
+         "jobCode":"303Y46",
+         "hoursEarned":"96",
+         "amount": null,
+         "overpayRate": null,
+         "overrideUnitRate":null,
+         "units":null,
+         "earningsBeginDate":"2017-02-01",
+         "earningsEndDate":"2017-02-15",
+         "detailStatus":"string",
+         "error":null         
+      },
+      {
+         "personId":"00001816968",
+         "earningCode":"REG",
+         "departmentId":"9CT5APPSVC",
+         "jobCode":"303Y4B",
+         "hoursEarned":"2.5",
+         "amount": null,
+         "overpayRate": 0,
+         "overrideUnitRate":null,
+         "units":null,
+         "earningsBeginDate":"2017-02-01",
+         "earningsEndDate":"2017-02-15",
+         "detailStatus":"string",
+         "error":null         
+      }
+   ]
+}
