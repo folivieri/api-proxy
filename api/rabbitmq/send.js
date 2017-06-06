@@ -12,7 +12,8 @@ var PROPS = {
 	'password':'TriNet123',
 	'exchange':'platform.exchange',
 	'requestQueue':'api-payroll.time.request.queue',
-	'responseQueue':'api-payroll.time.response.queue'
+	'responseQueue':'api-payroll.time.response.queue',
+	'requestRoute':'payroll.time.request'
 };
 
 String.format = function() {
@@ -42,17 +43,13 @@ amqp.connect(SERVER, function(err, conn) {
     
 	try {  
 		msg = fs.readFileSync('users.json', 'utf8');
-		//sg = JSON.parse(msg);
-		//console.log("Trying to parse: " + msg.data ); 
-		//msg.data = csv({noheader:false}).fromString(msg.data);
-		//console.log(msg);    
 	} catch(e) {
 		console.log('Error:', e.stack);
 	}
     
 
     ch.assertExchange(ex, 'topic', {durable: true});
-    ch.publish(ex, '', new Buffer(msg));
+    ch.publish(ex, PROPS.requestRoute, new Buffer(msg));
     console.log(" [x] Sent %s", msg);
   });
 
